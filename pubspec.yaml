@@ -40,3 +40,14 @@ flutter:
           weight: 400
         - asset: assets/font/Inter-SemiBold.ttf
           weight: 600
+    - family: Proxima Nova
+      fonts:
+        - asset: assets/font/ProximaNova-Bold.otf
+          weight: 700
+        - asset: assets/font/ProximaNova-ExtraBold.otf
+          weight: 800
+        - asset: assets/font/ProximaNova-Thin.otf
+          weight: 100
+        - asset: assets/font/ProximaNova-Regular.otf
+          weight: 400
+
