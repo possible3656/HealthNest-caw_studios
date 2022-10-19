@@ -5,7 +5,6 @@ import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/event_view.dar
 import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/home_feed_header.dart';
 import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/normal_post_view.dart';
 import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/poll_post_view.dart';
-import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/post_tag_chip.dart';
 import 'package:caw_studios/app/modules/UI/feedPage/views/widgets/question_post_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -166,7 +165,10 @@ class FeedPageView extends GetView<FeedPageController> {
               ),
 
               //poll
-              PollPostView()
+              PollPostView(),
+              SizedBox(
+                height: 20,
+              )
             ],
           ),
         ));
