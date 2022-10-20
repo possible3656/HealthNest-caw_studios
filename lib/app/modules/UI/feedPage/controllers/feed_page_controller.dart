@@ -1,9 +1,11 @@
 import 'package:caw_studios/app/data/GlobalWidgets/SvgImage.dart';
+import 'package:caw_studios/app/routes/app_pages.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../data/Constants.dart';
+import '../../../../data/GlobalWidgets/DividerView.dart';
 
 class FeedPageController extends GetxController {
   var searchTextController = TextEditingController().obs;
@@ -98,11 +100,8 @@ class FeedPageController extends GetxController {
                       ),
                     ),
                   ),
-                  Container(
-                    width: double.infinity,
-                    height: 1,
-                    color: Constants.dividerColor,
-                  ),
+                  DividerView(),
+
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 15),
                     child: SizedBox(
@@ -342,5 +341,9 @@ class FeedPageController extends GetxController {
         Icon(Icons.keyboard_arrow_right)
       ],
     );
+  }
+
+  onPostPressed(Widget child,String title) {
+    Get.toNamed(Routes.INNER_PAGE, arguments: {'child':child,'title':title});
   }
 }

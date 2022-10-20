@@ -3,6 +3,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
 import '../../../../../../data/Constants.dart';
+import '../../../../../../data/GlobalWidgets/DividerView.dart';
 
 class ReactionScore extends StatelessWidget {
   final String title;
@@ -14,11 +15,7 @@ class ReactionScore extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 14),
       child: Column(
         children: [
-          Container(
-            width: double.infinity,
-            height: 1,
-            color: Constants.dividerColor,
-          ),
+         DividerView(),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10),
             child: Row(
@@ -67,11 +64,7 @@ class ReactionScore extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            width: double.infinity,
-            height: 1,
-            color: Constants.dividerColor,
-          ),
+         DividerView()
         ],
       ),
     );
