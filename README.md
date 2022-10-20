@@ -1,16 +1,24 @@
-# caw_studios
+# HealthNest@caw_studios
+this is the mobile app of a new kind of social network of communities of patients suffering/recovering from severe diseases like Covid-19 and Cancer
 
-A new Flutter project.
+## App architecture
+HelthNest uses below dependencies:
 
-## Getting Started
+-> This app is built using flutter framework
 
-This project is a starting point for a Flutter application.
+-> Written in dart
 
-A few resources to get you started if this is your first Flutter project:
+-> It uses GetX as state-mangement ,routing and navigations
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+-> It uses flutter_svg for showing icon
+ 
+ ### How to run app
+ HealthNest requires Flutter setup done on the machine.
+```
+git clone https://github.com/possible3656/HealthNest-caw_studios
+cd HealthNest-caw_studios
+flutter pub get
+flutter run --release
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
