@@ -14,4 +14,9 @@ class InnerPageController extends GetxController {
     title =arguments['title'] ;
   }
 
+  onBackPressed() {
+    Get.back();
+  }
+
+
 }
